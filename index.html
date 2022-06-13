@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUCT Lesotho SRC</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    <style>
+        .butt{
+            width: 19%;
+            background-color: #000000;
+            color: #ffffff;
+            font-weight: bolder;
+            font-size: xx-large;
+            transition: 2s;
+        }
+
+        .butt button{
+            border: none;
+            background-color: black;
+            color: white;
+            font-size: 70px;
+            padding: 10px 10px;
+            transition: 2s; 
+        }
+        .butt a{
+            text-decoration: none;
+            color:#ffffff;
+        }
+        .butt:hover {
+            cursor: pointer;
+            background-color: #363636;
+            color: #ffffff;
+        } 
+        img{
+            margin-left:10%;
+        }
+        .container{
+            width:100%;
+			height: auto;
+			display:inline-flex;
+			margin-bottom: 50px;
+			padding-top:50px;
+        }
+        .box{
+			width:30%;
+			height:20%;
+			box-sizing: border-box;
+			font-family: Arial;
+            margin: 2% 2%;
+			}	
+        .footer {
+            background-color: black;
+            display: flex;
+            padding-left: 5%;
+        }
+        .con1{
+
+            margin: 3% 6%;
+        }
+        .con2 {
+            margin: 3% 6%;
+        }
+        .con3{
+            margin: 3% 6%;
+        }
+        .con4{
+            margin: 3% 6%;
+        }
+
+        .con4 p{
+            padding-left: 30%;
+        }
+        h1 {
+            color: white;
+        }
+        p {
+            color: white;
+        }
+        .fixed {
+            position: fixed;
+        }
+        .bg{
+            background: ;
+        }
+        #bg-video {
+            min-width: 100%;
+            min-height: 100vh;
+            max-width: 100%;
+            max-height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+        }
+            #bg-video::-webkit-media-controls {
+            display: none !important;
+        }
+            .video-overlay {
+            position: absolute;
+            background-color: rgba(31,39,43,0.75);
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" width="180px" height="110px";>
+        <table align="right" border="0" style="width: 76%; height: 15%;">
+            <tr align="center">
+                <td class="butt"><button>SRC</button></td><td class="butt" onclick="location='index.html'">Home</td><td class="butt"onclick="location='president.html'">President</td><td class="butt" onclick="location='vice.html'">Vice President</td><td class="butt" onclick="location='treasurer.html'">Treasurer</td>
+            </tr>
+        </table>
+    </header>
+    <br>
+   <video autoplay muted loop id="bg-video">
+        <source src="images/VID-20220603-WA0012.mp4" type="video/mp4" />
+    </video>
+    <div class="container">
+        <div class="box">
+            <h2>Student Representative Council</h2>
+                <article>
+                    Student Representative Council is a representative structure through which students in tertiary schools
+                    can become involved in the affairs of the school, working in partnership with the school management and staff
+                    for the benefit of the school and its students. 
+                </article>
+            </div>
+        <div class="box">
+         <h2> Why the SRC ?</h2>
+            <article>
+                <p>
+                    <ul>
+                        <li>The role of the SRC is to promote an environment conducive to educational and personal development.</li>
+                        <li>To support management and Staff in the development of the school</li>
+                        <li>To represent the views of the students on matters of general concern to them</li>
+                        <li>To enhance communication between students and Management</li>
+                    </ul>
+                </p>
+            </article>
+        </div>
+        <div>
+            <h2>SRC Positions</h2>
+            <table>
+                <tr><td><b>Position</b></td><td><b>Role</b></td></tr>
+                <tr><td>President</td><td>
+                    <ul>
+                        <li>Preside at all SRC meetings.</li>
+                        <li>Advice APA leaders on Students' welfare.</li>
+                        <li>Cooperate with the Management for stability.</li>
+                    </ul></td></tr>
+                <tr><td>Vice President</td><td>
+                    <ul>
+                        <li>Liason with other bodies on behalf of SRC.</li>
+                        <li>Serve on student award Juries.</li>
+                        <li>Attend SRC Executive meetings.</li>
+                    </ul>
+                </td></tr>
+                <tr><td>Treasurer</td><td>
+                    <ul>
+                        <li>Provide guidance and support to the SU.</li>
+                        <li>Plan student activities, programs and sessions.</li>
+                        <li>Promote APA and students' membership and encourage registration.</li>
+                    </ul>
+                </td></tr>
+            </table>
+            
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="con1">
+                <h1>Contacts</h1>
+                <p>Enquiries</p>
+                <p>Tel: +266 50022022</p>
+                <p>Admission enquiries</p>
+                <p>Tel: +266 50347893</p>
+            </div>
+            <div class="con2">
+                <h1>Address</h1>
+                <p>Moshoeshoe road</p>
+                <p> Maseru 100</p>
+                <p>Lesotho</p>
+            </div>
+            <div class="con3">
+                <h1>FAQ</h1>
+                <p>Vacancies</p>
+                <p>Term dates</p>
+                <p>Tenders</p>
+                <p>Wits</p>
+            </div>
+        <div class="con4">
+           <h1>Follow us:</h1>
+            <p><img src="images/facebook.png" height="20px;" width="35px" alt=""></p>
+            <p><img src="images/youtube.png" height="20px" width="25%" alt=""></p>
+            <p><img src="images/twitter.png" height="20px" width="29%" alt=""></p>
+            <p><img src="images/instagram.png" height="20px" width="26%" alt=""></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

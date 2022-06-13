@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUCT Lesotho SRC</title>
+    <style>
+        .butt{
+            width: 19%;
+            background-color: #000000;
+            color: #ffffff;
+            font-weight: bolder;
+            font-size: larger;
+            transition: 2s; 
+        }
+
+        .butt button{
+            border: none;
+            background-color: black;
+            color: white;
+            font-size: 70px;
+            padding: 10px 10px;
+            transition: 2s; 
+        }
+        .butt a{
+            text-decoration: none;
+            color:#ffffff;
+        }
+        .butt:hover {
+            cursor: pointer;
+            background-color: #363636;
+            color: #ffffff;
+        }
+         
+        img{
+            margin-left:10%;
+        }
+
+        .container{
+                width:100%;
+        height: auto;
+        display:inline-flex;
+        margin-bottom: 50px;
+        padding-top:50px;
+        }
+
+        .box{
+      width:30%;
+      height:20%;
+      box-sizing: border-box;
+      font-family: Arial;
+            margin: 2% 2%;
+        }
+        .position{
+            text-decoration: none;
+            text-align: center;
+            background-image: url(images/background.jpg);
+        }
+        .President-text{
+            margin-left: 3%;
+        }
+        .footer {
+            background-color: black;
+            display: flex;
+            padding-left: 5%;
+        }
+
+        .con1{
+
+            margin: 3% 6%;
+
+        }
+        .con2 {
+            margin: 3% 6%;
+        }
+
+        .con3{
+            margin: 3% 6%;
+        }
+        .con4{
+            margin: 3% 6%;
+        }
+
+        .con4 p{
+            padding-left: 30%;
+        }
+        h1 {
+            color: white;
+        }
+        p {
+            color: white;
+        }
+        .fixed {
+            position: fixed;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+        section{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: skyblue;
+         }
+        section .gti{
+            position: relative;
+            min-width: 1100px;
+            min-height: 550px;
+            display: flex;
+            z-index: 1000;
+        }
+        section .gti .contact-info{
+            position: absolute;
+            top: 40px;
+            width: 350px;
+            height: calc(100% - 80px);
+            background: #0f3959;
+            z-index: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+        }
+        section .gti .contact-info h2{
+            color: grey;
+            font-size: 24px;
+            font-weight: 500;
+        }
+        section .gti .contact-info .info{
+            position: relative;
+            margin: 20px 0;
+        }
+        section .gti .contact-info .info li{
+            position: relative;
+            list-style: none;
+            display: flex;
+            margin: 20px 0;
+            cursor: pointer;
+            align-items: flex-start;
+        }
+        section .gti .contact-info .info li span:nth-child(1){
+            width: 30px;
+            min-width: 30px;
+        }
+        section .gti .contact-info .info li span:nth-child(1) img{
+            max-width: 100%;
+            filter: invert(1);
+            opacity: 0.5;
+        }
+        section .gti .contact-info .info li span:nth-child(2){
+            color: white;
+            margin-left: 10px;
+            font-weight: 300;
+            opacity: 0.5;
+        }
+        section .gti .contact-info .info li.hover span:nth-child(1) img,
+         section .gti .contact-info .info li.hover span:nth-child(2),
+         {
+            opacity: 1;
+         }
+            section .gti .Contactform{
+                position: absolute;
+                padding: 70px 50px;
+                background: #fff;
+                margin-left: 150px;
+                padding-left: 250px;
+                width: calc(100% - 150px);
+                height: 100%;
+                box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+                }
+            section .gti .Contactform h2{
+                color: #0f3959;
+                font-weight: 500;
+                }
+            section .gti .Contactform .formbox{
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                padding-top: 30px;
+                }
+            section .gti .Contactform .formbox .inputbox{
+                position: relative;
+                margin: 0 0 35px 0;
+                }
+            section .gti .Contactform .formbox .inputbox.w50{
+                width: 47%;
+                }
+            section .gti .Contactform .formbox .inputbox.w100{
+                width: 100%;
+                }
+            section .gti .Contactform .formbox .inputbox input,
+            section .gti .Contactform .formbox .inputbox textarea{
+                width: 100% !important;
+                padding: 5px 0;
+                resize: none;
+                font-size: 18px;
+                font-weight: 300;
+                color: #333;
+                border: none;
+                border-bottom: 1px solid #777;
+                outline: none;
+                }
+            section .gti .Contactform .formbox .inputbox textarea{
+                min-height: 120px;
+                }
+            section .gti .Contactform .formbox .inputbox span{
+                position: absolute;
+                left: 0;
+                padding: 5px 0;
+                font-size: 18px;
+                font-weight: 300;
+                color: #333;
+                transition: 0.5;
+                pointer-events: none;
+                }
+                section .gti .Contactform .formbox .inputbox input:focus~span,
+                section .gti .Contactform .formbox .inputbox  textarea:focus~span
+                section .gti .Contactform .formbox .inputbox input:valid~span,
+                section .gti .Contactform .formbox .inputbox  textarea:valid~span
+                {
+                    transform: translateY(-20px);
+                    font-size: 12px;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    color: #ff568c;
+                }
+                section .gti .Contactform .formbox .inputbox input[type="submit"]{
+                    position: relative;
+                    cursor: pointer;
+                    background: #0f3959;
+                    color: white;
+                    border: none;
+                }
+</style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" width="180px" height="110px">
+        <table align="right" border="0" style="width: 76%; height: 15%;">
+            <tr align="center">
+                <td class="butt"><button>SRC</button></td><td class="butt" onclick="location='index.html'">Home</td><td class="butt"onclick="location='president.html'">President</td><td class="butt" onclick="location='vice.html'">Vice President</td><td class="butt" onclick="location='treasurer.html'">Treasurer</td>
+            </tr>
+        </table>
+    </header>
+    <br>
+
+</style>
+ 
+<!-- About Section -->
+
+    <div class="position">
+        <h1 class="display" style="-webkit-text-stroke: 1px skyblue;">
+        WELCOME TO LIMKOKWING UNIVERSITY OF LESOTHO
+      </h1>
+    </div>
+    <br>
+    <img src="images/IMG-20200824-WA0008.jpg" style="float: right;">
+    <div class="col-lg-7">
+      <h1 class="mb-4" style="color: #0f3959; margin-left: 3%;">LIMKOKWING VICE-PRESIDENT </h1><br>
+      <p style="color: black;font-size: 20px; margin-left: 3%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <br>
+      </p>
+    </div>
+    <br>
+    <div class="President-text">
+    <p> <h3>Name: <span class="text-secondary">LIMPHO PHOOLE</span></h3><br>
+    <h3>Age: <span class="text-secondary">27</span></h3><br>
+    <h3>Year of Study: <span class="text-secondary">2022</span></h3><br>
+    <h3>Course of Study: <span class="text-secondary">Human Resource Management</span></h3></p>
+    <br>
+    <p><h3>Email: <span class="text-secondary">phoole34@gmail.com</span></h3><br>
+    <h3>Phone: <span class="text-secondary">+266 51942310</span></h3><br>
+    <h3>Freelance: <span class="text-secondary">available</span></h3></p><br>
+    </div>
+    <br>
+<section>
+<div class="gti">
+    <div class="contact-info">
+        <div>
+            <h2>Contact Info</h2>
+             <ul class="info">
+                <li>
+                    <span>
+                        <img src="images/17-170231_location-icons-location-png.png"></span>
+                    <span> 2355 Moshoeshoe Road,<br>
+                        Maseru 100,Lesotho
+                    </span>
+                </li>
+                <li>
+                    <span><img src="images/mail.png"></span>
+                    <span>phoole34@gmail.com</span>
+                </li>
+                <li>
+                    <span><img src="images/phone-512.png"></span>
+                    <span>+266 56880978</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="Contactform">
+    <h2>Send a message</h2>
+    <div class="formbox">
+        <div class="inputbox w50">
+        <input type="text" name="" required>
+        <span>First Name</span>
+    </div>
+    <div class="inputbox w50">
+        <input type="text" name="" required>
+        <span>Last Name</span>
+    </div>
+    <div class="inputbox w50">
+        <input type="text" name="" required>
+        <span>Email Address</span>
+    </div>
+    <div class="inputbox w50">
+        <input type="text" name="" required>
+        <span>Mobile Number</span>
+    </div>
+    <div class="inputbox w100">
+        <textarea name="" required></textarea>
+        <span>write your message here...</span>
+    </div>
+    <div class="inputbox w100">
+        <input type="submit" value="send">
+    </div>
+</div>
+</section>
+<footer>
+        <div class="footer">
+            <div class="con1">
+                <h1>Contacts</h1>
+                <p>Enquiries</p>
+                <p>Tel: +266 50022022</p>
+                <p>Admission enquiries</p>
+                <p>Tel: +266 50347893</p>
+            </div>
+            <div class="con2">
+                <h1>Address</h1>
+                <p>Moshoeshoe road</p>
+                <p> Maseru 100</p>
+                <p>Lesotho</p>
+            </div>
+            <div class="con3">
+                <h1>FAQ</h1>
+                <p>Vacancies</p>
+                <p>Term dates</p>
+                <p>Tenders</p>
+                <p>Wits</p>
+            </div>
+            <div class="con4">
+                <h1>Follow us:</h1>
+                <p><img src="images/facebook.png" height="20px;" width="35px" alt=""></p>
+                <p><img src="images/youtube.png" height="20px" width="25%" alt=""></p>
+                <p><img src="images/twitter.png" height="20px" width="29%" alt=""></p>
+                <p><img src="images/instagram.png" height="20px" width="26%" alt=""></p>
+            </div>
+
+    </div>
+    </footer>
+</body>
+</html>
